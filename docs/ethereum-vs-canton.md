@@ -29,7 +29,7 @@ How common Ethereum terms map to their Canton equivalents.
 | Gas | Traffic, paid in Canton Coin |
 | ETH | Canton Coin (CC) |
 | ERC-20 / token standard | Canton Network Token Standard (CIP-0056) |
-| Block explorer (Etherscan) | Per-app Scan API; no single global explorer |
+| Block explorer (Etherscan) | Global explorers (Cantonscan, CCView, others); also per-app Scan APIs |
 | Public RPC endpoint (Infura, Alchemy) | Per-participant Ledger API; no global RPC endpoint |
 | Local dev chain (Anvil, Hardhat Network) | LocalNet via CN Quickstart |
 | Testnet | DevNet (development staging) and TestNet (production staging) |
