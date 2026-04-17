@@ -95,6 +95,7 @@ Each chapter lives in its own file. The chapter title is H1 in that file; subsec
    1. Articles and Deep Dives
    2. Terminology Mapping
    3. How-to Mapping
+   4. Zenith: EVM on Canton
 4. **`docs/daml.md` - Daml** (H1)
    1. Learning Daml
    2. Daml Patterns and Best Practices
@@ -108,8 +109,7 @@ Each chapter lives in its own file. The chapter title is H1 in that file; subsec
    5. dApp Frontend Development (with `### Ecosystem wallets` H3 subsection)
 5. **`docs/internals.md` - Platform Internals** (H1)
    1. Under the Hood
-   2. Zenith: EVM on Canton
-   3. Canton Improvement Proposals (CIPs)
+   2. Canton Improvement Proposals (CIPs)
 6. **`docs/operations.md` - Operations and Ecosystem** (H1)
    1. Node Operation and Infrastructure
    2. Explorers and Analytics

@@ -5,11 +5,6 @@
 - [Introducing Splice](https://www.lfdecentralizedtrust.org/blog/introducing-splice-a-new-hyperledger-lab-that-supports-canton-network-interoperability) explains why the Hyperledger Lab was created.
 - Protocol source: [digital-asset/canton](https://github.com/digital-asset/canton).
 
-## Zenith: EVM on Canton
-
-- [zenith.network](https://zenith.network/) hosts the Super Validator running the Zenith EVM and Stack.
-- [Zenith docs intro](https://docs.zenith.network/docs/intro) explains the multi-VM execution environment.
-
 ## Canton Improvement Proposals (CIPs)
 
 - Registry and process

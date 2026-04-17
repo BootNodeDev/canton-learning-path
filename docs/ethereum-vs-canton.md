@@ -51,3 +51,8 @@ How common Ethereum workflows translate to Canton.
 | Run Solidity unchanged | Native on any EVM chain | Zenith, Canton's EVM layer (in development) |
 
 Daml models rights and obligations rather than the account-and-state model, so several Ethereum idioms (reentrancy guards, `msg.sender` patterns, gas-based DoS mitigations) have no direct Canton equivalent because the underlying execution model differs.
+
+## Zenith: EVM on Canton
+
+- [zenith.network](https://zenith.network/) hosts the Super Validator running the Zenith EVM and Stack.
+- [Zenith docs intro](https://docs.zenith.network/docs/intro) explains the multi-VM execution environment.
