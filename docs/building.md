@@ -64,7 +64,3 @@ Canton authentication is OAuth2/OIDC against a participant node; frontends talk 
 - [Cantor8 / C8](https://www.canton.network/ecosystem/cantor8) - external-signing mobile and web wallet
 - [Cypherock X1](https://cypherock.com/) - hardware wallet with Canton Rewards promo
 - [Bron](https://www.bron.org/) - multi-chain non-custodial wallet
-
-## Migration from EVM / Solidity
-
-Parties and signatories replace `msg.sender`. Privacy is default, not opt-in. No gas in the EVM sense. Determinism eliminates reentrancy. State is active contracts, not account storage.

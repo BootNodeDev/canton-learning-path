@@ -106,7 +106,6 @@ Each chapter lives in its own file. The chapter title is H1 in that file; subsec
    3. Example Apps
    4. Libraries and Frameworks
    5. dApp Frontend Development (with `### Ecosystem wallets` H3 subsection)
-   6. Migration from EVM / Solidity
 5. **`docs/internals.md` - Platform Internals** (H1)
    1. Under the Hood
    2. Zenith: EVM on Canton
