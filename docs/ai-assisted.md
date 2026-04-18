@@ -23,16 +23,19 @@ No model is Daml-native. The relevant signal is how well a model handles Haskell
 
 ## AI for general Canton usage
 
-- Query ledger state via the JSON Ledger API with an AI agent as an operational assistant; generate typed clients from the [OpenAPI spec](https://docs.digitalasset.com/build/3.5/reference/json-api/openapi.html).
+- Query ledger state via the JSON Ledger API with an AI agent as an operational assistant. Use the prebuilt [@canton-network/core-ledger-client](https://www.npmjs.com/package/@canton-network/core-ledger-client) or generate a typed client from the [OpenAPI spec](https://docs.digitalasset.com/build/3.5/reference/json-api/openapi.html).
 - Scaffold dApp frontends against the [@canton-network/dapp-sdk](https://www.npmjs.com/package/@canton-network/dapp-sdk) with AI-generated wiring.
 - For synchronizer operations, AI is useful for log and trace triage but unreliable for config generation; cross-reference the operate docs.
+- Expose Canton tooling to an agent via MCP: the [canton-mcp-server](https://github.com/ChainSafe/canton-mcp-server) wraps `daml` and `canton` CLIs, and the [Lighthouse explorer MCP](https://github.com/agenticledger/ClientMCP_LIGHTHOUSE_MCPSERVER) gives read access to CNS, governance, validators, and contracts.
+- Pin the target Canton SDK version in the repo's rules file; the agent will otherwise mix 3.3/3.4/3.5 doc paths and API shapes.
 
 ## Making an LLM better at Daml
 
 Ordered from lowest to highest effort.
 
-- **Rules file**: encode Daml idioms in `CLAUDE.md`, `.cursorrules`, or `AGENTS.md`.
-- **Few-shot examples**: paste canonical templates (Iou, Proposal-Accept, Delegation) into the prompt.
+- **Rules file**: encode Daml idioms in `CLAUDE.md`, `.cursorrules`, or `AGENTS.md`. Pin the SDK version, list template and choice naming conventions, and instruct the agent to derive observers from business rules rather than copy them from other templates.
+- **Few-shot examples**: paste canonical templates (Iou, Proposal-Accept, Delegation) into the prompt, and at least one Daml Script that must fail with a missing-authorization error.
 - **RAG over official sources**: index [docs.daml.com](https://docs.daml.com/), [docs.digitalasset.com](https://docs.digitalasset.com/), [forum.canton.network](https://forum.canton.network/), and the [digital-asset/daml](https://github.com/digital-asset/daml) source.
-- **MCP servers**: point an MCP-capable agent at the Daml SDK tree, Daml Finance source, and the Canton forum.
+- **MCP servers**: point an MCP-capable agent at the Daml SDK tree, Daml Finance source, and the Canton forum. For project-local context, a lightweight MCP over the repo's `daml/` tree and `daml.yaml` scopes the agent to your own code.
+- **Custom scripts**: a pre-commit hook that runs `daml build` and `daml test` and feeds failures back to the agent; an authorization linter that flags mismatched signatory/observer/controller sets; a DAR diff tool that warns on breaking template-evolution changes.
 - **Fine-tuning**: LoRA or full fine-tune on open-weights models (Llama, Qwen, DeepSeek) using your internal Daml corpus plus the public sources. Only worth it at scale.
