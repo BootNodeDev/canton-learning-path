@@ -25,3 +25,5 @@
 - GitHub orgs
   - [canton-foundation on GitHub](https://github.com/canton-foundation)
   - [digital-asset on GitHub](https://github.com/digital-asset)
+- Talks
+  - Watch [The Blockchain Institutions Will Actually Use](https://www.youtube.com/watch?v=s_Ik-lARbQw) - long-form Stableminded interview with Digital Asset co-founder Eric Saraniecki on Canton's institutional design.

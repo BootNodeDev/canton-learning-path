@@ -10,6 +10,7 @@
 - [Polyglot Canton Whitepaper](https://www.canton.network/hubfs/Canton%20Network%20Files/whitepapers/Polyglot_Canton_Whitepaper_11_02_25.pdf) extends Canton to Solidity and WASM. *(Est. time: 30 min)*
 - Full list at the [Canton whitepapers index](https://canton.network/whitepapers).
 - [Canton Network Developer Resources](https://www.canton.network/developer-resources) is the starting point for builders.
+- Watch [Canton Demo](https://www.canton.io/videos/canton-demo.mp4) for a short animated walk-through of synchronization, privacy, and atomic settlement. *(Est. time: 3 min)*
 
 ## Canton Core Concepts
 
