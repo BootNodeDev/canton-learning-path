@@ -23,6 +23,7 @@ Ordered from lowest to highest effort.
 - **Few-shot examples**: paste canonical templates (Iou, Proposal-Accept, Delegation) into the prompt, and at least one Daml Script that must fail with a missing-authorization error.
 - **RAG over official sources**: index [docs.daml.com](https://docs.daml.com/), [docs.digitalasset.com](https://docs.digitalasset.com/), [forum.canton.network](https://forum.canton.network/), and the [digital-asset/daml](https://github.com/digital-asset/daml) source.
 - **MCP servers**: point an MCP-capable agent at the Daml SDK tree, Daml Finance source, and the Canton forum. For project-local context, a lightweight MCP over the repo's `daml/` tree and `daml.yaml` scopes the agent to your own code.
+- **Agent skills**: package domain knowledge as reusable skills or agent tools: a Daml code review skill that checks authorization and privacy invariants, a test scaffold skill that generates Daml Scripts per template choice, a Canton deployment skill that produces participant or validator config from a template.
 - **Custom scripts**: a pre-commit hook that runs `daml build` and `daml test` and feeds failures back to the agent; an authorization linter that flags mismatched signatory/observer/controller sets; a DAR diff tool that warns on breaking template-evolution changes.
 - **Fine-tuning**: LoRA or full fine-tune on open-weights models (Llama, Qwen, DeepSeek) using your internal Daml corpus plus the public sources. Only worth it at scale.
 
