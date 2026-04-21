@@ -2,7 +2,7 @@
 
 ## Courses and Certification
 
-- Tracks from Philosophy through Solution Architect: [Daml Training and Certification](https://www.digitalasset.com/training-and-certification).
+- [Daml Training and Certification](https://daml.talentlms.com/plus/catalog) - Four tracks, in order: Philosophy, Fundamentals, Developer Certification, Technical Solution Architect.
 - Theory to practice on StackUp: [Canton and Daml Fundamentals pathway](https://earn.stackup.dev/learn/pathways/canton-and-daml-fundamentals-328a).
 - Learn and earn with [Unlocking Canton with Daml](https://earn.stackup.dev/campaigns/unlocking-canton-with-daml-unifying-traditional-and-crypto-markets-on-chain) on StackUp.
 - [Canton Core Academy](https://angelhack.com/events/canton-core-academy/) - AngelHack's multi-phase developer program
