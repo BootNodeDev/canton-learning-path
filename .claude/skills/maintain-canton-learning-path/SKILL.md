@@ -106,7 +106,8 @@ Each chapter lives in its own file. The chapter title is H1 in that file; subsec
    2. Toolbox
    3. Example Apps
    4. Libraries and Frameworks
-   5. dApp Frontend Development (with `### Ecosystem wallets` H3 subsection)
+   5. SDKs and Client Libraries
+   6. dApp Frontend Development (with `### Ecosystem wallets` H3 subsection)
 5. **`docs/internals.md` - Platform Internals** (H1)
    1. Under the Hood
    2. Canton Improvement Proposals (CIPs)

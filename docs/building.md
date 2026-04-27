@@ -25,9 +25,7 @@
   - [JSON Ledger API](https://docs.daml.com/reference/json-api/json-api.html) - HTTP interface to the ledger
   - [JSON Ledger API OpenAPI spec](https://docs.digitalasset.com/build/3.5/reference/json-api/openapi.html) - for typed client generation
   - [gRPC Ledger API services](https://docs.digitalasset.com/build/3.5/explanations/ledger-api-services.html) - commands, reads, utility, test
-- Client libraries
-  - [JavaScript/TypeScript client libraries](https://docs.daml.com/app-dev/bindings-ts/index.html) - @daml/react, @daml/ledger, @daml/types
-  - [Java bindings](https://docs.digitalasset.com/build/3.5/component-howtos/application-development/client-libraries/ledger-api-client-libraries/java-client-libraries.html) - reference and IOU quickstart
+- [Java bindings](https://docs.digitalasset.com/build/3.5/component-howtos/application-development/client-libraries/ledger-api-client-libraries/java-client-libraries.html) - reference and IOU quickstart
 - Source
   - [digital-asset/daml](https://github.com/digital-asset/daml) - the SDK source
 
@@ -43,9 +41,24 @@
 - Splice
   - [Splice](https://github.com/hyperledger-labs/splice) - reference apps for decentralized synchronizers
   - [Splice docs](https://docs.splice.global/) - deployment and app development
-- Wallet SDKs
-  - [splice-wallet-kernel](https://github.com/hyperledger-labs/splice-wallet-kernel) - Wallet Gateway, dApp SDK, Wallet SDK monorepo
-  - [PartyLayer](https://partylayer.xyz/) - unified SDK for integrating with multiple Canton wallet implementations from a single API
+- [PartyLayer](https://partylayer.xyz/) - unified SDK for integrating with multiple Canton wallet implementations from a single API
+
+## SDKs and Client Libraries
+
+- Starters
+  - [canton-dapp-starter](https://github.com/alexandre-mrt/canton-dapp-starter) - Next.js dApp starter with wallet connection, contract CRUD, and CIP-103 support
+  - [create-canton-app](https://www.npmjs.com/package/create-canton-app) - npx scaffolder for new Canton Network and Daml projects
+- TypeScript and JavaScript
+  - [@daml/types](https://www.npmjs.com/package/@daml/types) - primitive Daml types and serialization for TypeScript
+  - [@daml/ledger](https://www.npmjs.com/package/@daml/ledger) - JSON Ledger API v1 client; contract queries, streaming, and command submission
+  - [@daml/react](https://www.npmjs.com/package/@daml/react) - React hooks for contract queries and executing choices on a Daml ledger
+  - [Daml JS codegen](https://github.com/digital-asset/daml/tree/main/sdk/language-support/js/codegen) - generates typed TypeScript npm packages from compiled .dar files
+  - [@c7-digital/ledger](https://www.npmjs.com/package/@c7-digital/ledger) - JSON Ledger API v2 TypeScript client
+  - [@c7-digital/react](https://www.npmjs.com/package/@c7-digital/react) - React hooks for the Canton JSON Ledger API v2
+- Wallet kernel
+  - [splice-wallet-kernel](https://github.com/hyperledger-labs/splice-wallet-kernel) - Wallet Gateway, dApp SDK, and Wallet SDK monorepo
+- Other languages
+  - [go-daml](https://github.com/noders-team/go-daml) - Go gRPC Ledger API client with type-safe codegen from Daml definitions
 
 ## dApp Frontend Development
 
