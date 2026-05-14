@@ -8,10 +8,9 @@ Daml derives from Haskell; a working knowledge of the syntax helps. Start with t
   - Work through [Learn You a Haskell for Great Good](https://learnyouahaskell.github.io/), the classic intro. *(Est. time: 20 hours)*
   - Browse the [Haskell Wiki learning portal](https://wiki.haskell.org/Learning_Haskell) for textbooks and online practice.
 - The [Fast Track to Daml](https://docs.digitalasset.com/build/3.5/reference/daml-language-cheat-sheet.html) cheatsheet covers Daml syntax on one page.
-- Multi-party application patterns: [Introduction to Multi-Party Applications and Daml](https://docs.daml.com/multiparty-application-intro.html).
 - Follow the [Smart contract development path](https://docs.digitalasset.com/build/3.5/tutorials/smart-contracts/intro.html) for a progressive tutorial on the current platform.
-- [Daml Masterclass](https://medium.com/daml-masterclass) is a long-form Medium series on contract design.
-- Short intro videos: [Daml 101 playlist](https://www.youtube.com/playlist?list=PLjLGVUzUMRxUqUXUGltc85HkB7CxsIYR4).
+- [Daml Masterclass](https://medium.com/daml-masterclass) is a long-form Medium series on contract design; predates Daml 3.x but ledger semantics still apply.
+- Watch the [Daml 101 playlist](https://www.youtube.com/playlist?list=PLjLGVUzUMRxUqUXUGltc85HkB7CxsIYR4) for short language intros; tooling clips predate Daml 3.x.
 
 ## Daml Patterns and Best Practices
 
@@ -20,11 +19,12 @@ Daml derives from Haskell; a working knowledge of the syntax helps. Start with t
 
 ## Testing Daml
 
-- The idiomatic Daml test harness: [Test Templates Using Daml Script](https://docs.daml.com/tutorials/get-started/intro/scripts.html).
-- [Test Your App](https://docs.daml.com/getting-started/testing.html) covers full-stack tests including the UI layer.
+- The idiomatic Daml test harness: [Test Templates Using Daml Script](https://docs.digitalasset.com/build/3.5/tutorials/smart-contracts/daml-scripts.html).
 - Run dpm test, debug, and trace workflows with [Test Daml Contracts on Platform](https://docs.digitalasset.com/build/3.5/tutorials/smart-contracts/tests.html).
 
 ## Daml Finance and Tokenization
+
+Daml Finance has not been ported to Daml 3.x; the library, its docs, and the patterns articles below target Daml SDK 2.x.
 
 - Docs and code
   - [Daml Finance docs](https://docs.daml.com/daml-finance/index.html) covers instruments, accounts, holdings, and settlement.
