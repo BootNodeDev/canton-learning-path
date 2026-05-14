@@ -8,8 +8,13 @@ How common Ethereum terms map to their Canton equivalents.
 
 | Ethereum | Canton |
 |---|---|
+| Blockchain | Synchronizer (coordinates consensus; holds no shared ledger state) |
+| Node | Validator, also called participant; stores only its parties' data |
 | Smart contract | Daml template |
+| Contract instance | Contract (immutable; updates archive the old and create a new one) |
+| Function / method | Choice (archives and/or creates contracts) |
 | Solidity | Daml |
+| Global state | Distributed state (each node holds only its parties' data) |
 | Account / EOA | Party (format `name::fingerprint`) |
 | Gas | Traffic, paid in Canton Coin |
 | ETH | Canton Coin (CC) |
@@ -19,6 +24,8 @@ How common Ethereum terms map to their Canton equivalents.
 | Local dev chain (Anvil, Hardhat Network) | LocalNet via CN Quickstart |
 | Testnet | DevNet (development staging) and TestNet (production staging) |
 | Solidity on EVM | Zenith, Canton's EVM layer (in development) |
+
+*Source: [Canton for Ethereum Developers](https://docs.canton.network/appdev/modules/m2-canton-for-ethereum-devs).*
 
 ## How-to Mapping
 
@@ -35,10 +42,12 @@ How common Ethereum workflows translate to Canton.
 | Deploy a fungible token | Write or clone an ERC-20 | Implement the Canton Network Token Standard (CIP-0056) |
 | Run Solidity unchanged | Native on any EVM chain | Zenith, Canton's EVM layer (in development) |
 
-Daml models rights and obligations rather than the account-and-state model, so several Ethereum idioms (reentrancy guards, `msg.sender` patterns, gas-based DoS mitigations) have no direct Canton equivalent because the underlying execution model differs.
+Daml models rights and obligations rather than accounts and shared state. Authorization is declared on the contract through `signatory`, `observer`, and `controller` parties instead of asserted at runtime through `msg.sender`, so Ethereum idioms like reentrancy guards and gas-based DoS mitigations have no Canton equivalent.
 
 ## Articles and Deep Dives
 
+- Official AppDev module
+  - Read [Canton for Ethereum Developers](https://docs.canton.network/appdev/modules/m2-canton-for-ethereum-devs) for the canonical mapping, authorization model, and mental-model shift. *(Est. time: 30 min)*
 - Technical contrasts
   - Read [Canton Network vs. EVM-Compatible Blockchains](https://defiprime.com/canton-vs-evm) for a technical EVM comparison. *(Est. time: 15 min)*
   - [Ethereum and Canton: Unifying Public Innovation with Institutional Scale](https://www.canton.network/blog/ethereum-and-canton-unifying-public-innovation-with-institutional-scale) positions Zenith as the bridge between both ecosystems. *(Est. time: 10 min)*
