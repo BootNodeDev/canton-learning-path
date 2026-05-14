@@ -10,6 +10,7 @@
 - Registry and process
   - Full CIP repository: [canton-foundation/cips](https://github.com/canton-foundation/cips).
   - Submit proposals via PR to the [canton-dev-fund](https://github.com/canton-foundation/canton-dev-fund) repo.
+  - Browse CIPs with search, filters, and a relationship graph: [CIP Explorer](https://cip-explorer-app.vercel.app/).
 - Individual CIPs
   - [CIP-0056: Token Standard](https://github.com/canton-foundation/cips/blob/main/cip-0056/cip-0056.md) defines uniform APIs for wallets and DvP.
   - [CIP-0082: 5% Development Fund](https://github.com/canton-foundation/cips/blob/main/cip-0082/cip-0082.md)
