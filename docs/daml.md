@@ -9,8 +9,8 @@ Daml derives from Haskell; a working knowledge of the syntax helps. Start with t
   - Browse the [Haskell Wiki learning portal](https://wiki.haskell.org/Learning_Haskell) for textbooks and online practice.
 - The [Fast Track to Daml](https://docs.digitalasset.com/build/3.5/reference/daml-language-cheat-sheet.html) cheatsheet covers Daml syntax on one page.
 - Follow the [Smart contract development path](https://docs.digitalasset.com/build/3.5/tutorials/smart-contracts/intro.html) for a progressive tutorial on the current platform.
-- [Daml Masterclass](https://medium.com/daml-masterclass) is a long-form Medium series on contract design; predates Daml 3.x but ledger semantics still apply.
-- Watch the [Daml 101 playlist](https://www.youtube.com/playlist?list=PLjLGVUzUMRxUqUXUGltc85HkB7CxsIYR4) for short language intros; tooling clips predate Daml 3.x.
+- [Daml Masterclass](https://medium.com/daml-masterclass) is a long-form Medium series on contract design. *(Predates Daml 3.x but ledger semantics still apply)*
+- Watch the [Daml 101 playlist](https://www.youtube.com/playlist?list=PLjLGVUzUMRxUqUXUGltc85HkB7CxsIYR4) for short language intros. *(Tooling clips predate Daml 3.x)*
 
 ## Daml Patterns and Best Practices
 
@@ -24,10 +24,8 @@ Daml derives from Haskell; a working knowledge of the syntax helps. Start with t
 
 ## Daml Finance and Tokenization
 
-Daml Finance has not been ported to Daml 3.x; the library, its docs, and the patterns articles below target Daml SDK 2.x.
-
 - Docs and code
-  - [Daml Finance docs](https://docs.daml.com/daml-finance/index.html) covers instruments, accounts, holdings, and settlement.
+  - [Daml Finance docs](https://docs.daml.com/daml-finance/index.html) covers instruments, accounts, holdings, and settlement. *(Daml SDK 2.x)*
 - Patterns
   - [The Finance Library, Part 1](https://medium.com/daml-masterclass/the-finance-library-part-1-2f94ed07c349) covers modular design and settlement chains.
   - [Asset Servicing](https://medium.com/daml-masterclass/asset-servicing-c899ed60404a) models bonds and equity option lifecycles.
