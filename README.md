@@ -1,3 +1,5 @@
+![Canton Learning Path](./banner.webp)
+
 # Canton Network Learning Path
 
 A curated, progression-ordered list of resources for developers learning to build on [Canton Network](https://canton.network).
