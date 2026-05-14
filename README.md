@@ -4,8 +4,6 @@
 
 A curated, progression-ordered list of resources for developers learning to build on [Canton Network](https://canton.network).
 
-Start with the Foundations below, then follow the chapters in order.
-
 ## Foundations
 
 ### Pre-requisites
